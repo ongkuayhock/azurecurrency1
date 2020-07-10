@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="{{ url_for('static', filename='jsoncurrency2index.js') }}"></script>
+        <title>Currency Converter</title>
+        <h1 style="color: blue;"> Real Time Web Currency Converter - by KH Ong </h1>
+        <h6></h6>
+        <p> Some currencies are: EUR, USD, GBP, SGD, HKD, AUD, IDR, PHP, THB, INR....  </p>
+        <p></p>
+    </head>
+    <script>
+        console.log("testing")
+    </script>
+    <body>
+        <form id="form">
+            <input id="fmcurrency" autocomplete="off" autofocus placeholder="From Currency" type="text">
+            <input id="tocurrency" autocomplete="off" autofocus placeholder="To Currency" type="text">
+            <input type="submit" value="Get Exchange Rate">
+        </form>
+        <br>
+        <div id="result"></div>
+    </body>
+</html>
